@@ -63,7 +63,7 @@ On macOS 14 and earlier, you can also Control-click "hearthpost" and choose "Ope
 
 ### 3. Answer "Allow" to the prompts
 
-After it opens, one or both of these may appear.
+After it opens, these two prompts appear (the second one does not appear if the firewall is off).
 hearthpost needs both to talk to the other computers in your home, so click "Allow".
 
 - "“hearthpost” would like to find and connect to devices on your local network" → "Allow"
