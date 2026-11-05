@@ -50,7 +50,7 @@ hearthpost is not signed by an Apple-verified developer (it is a free app publis
 So the first time only, you need to tell your Mac that it is OK to open it.
 
 1. Double-click "hearthpost" in the Applications folder.
-2. If a message such as "“hearthpost” Not Opened" or "cannot verify the developer" appears, click "Done" or "OK" to close it (do not click "Move to Trash").
+2. If it says "Apple could not verify “hearthpost.app” is free of malware that may harm your Mac or compromise your privacy.", click "Done" to close it (do not click "Move to Trash"). This always appears for apps without a signature; it does not mean hearthpost is broken.
 3. Open "System Settings" from the Apple menu at the top left, and choose "Privacy & Security" in the list on the left.
 4. Scroll down on the right. Under "Security" there is a note about hearthpost and an "Open Anyway" button. Click it.
 5. When asked again, click "Open Anyway" and enter your Mac password (or use Touch ID).
