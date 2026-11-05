@@ -77,9 +77,9 @@ If that happened, see "Nothing arrives when someone sends to me" under Troublesh
 ### 1. Open the installer
 
 1. Open the Downloads folder in File Explorer and double-click `hearthpost-windows-setup.exe`.
-2. If a blue screen says "Windows protected your PC", click "More info", then click "Run anyway".
+2. If a screen says "Windows protected your PC", click "More info", then click "Run anyway".
 
-This blue screen appears for apps that are not signed by a Microsoft-verified developer (it is a free app published by an individual).
+This screen appears for apps that are not signed by a Microsoft-verified developer (it is a free app published by an individual).
 
 ### 2. Follow the installer
 
