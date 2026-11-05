@@ -1,0 +1,19 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "hearthpost",
+  "outputfilename": "hearthpost",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "info": {
+    "companyName": "Rererr",
+    "productName": "hearthpost",
+    "productVersion": "0.1.0",
+    "comments": "LAN 内でファイルとテキストを送り合う"
+  },
+  "author": {
+    "name": "Rererr",
+    "email": "44668651+Rererr@users.noreply.github.com"
+  }
+}
