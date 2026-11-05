@@ -7,3 +7,4 @@ bin/
 /hearthpost
 build/dmg
 build/windows/installer/tmp
+build/dmg-rw.dmg

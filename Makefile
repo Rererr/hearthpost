@@ -13,13 +13,9 @@ build-mac:
 build-windows:
 	$(WAILS) build -skipbindings -platform windows/amd64 -nsis -installscope user
 
-# 配布用の dmg。開くと hearthpost と「アプリケーション」が並び、ドラッグで入れられる
+# 配布用の dmg（背景に入れ方の案内。作り方は scripts/make-dmg.sh）
 dmg: build-mac
-	rm -rf build/dmg && mkdir -p build/dmg
-	cp -R build/bin/hearthpost.app build/dmg/
-	ln -s /Applications build/dmg/Applications
-	hdiutil create -volname hearthpost -srcfolder build/dmg -ov -format UDZO build/bin/hearthpost.dmg
-	rm -rf build/dmg
+	scripts/make-dmg.sh
 
 # main.go が frontend/dist を埋め込むので、Go の検査より先に画面をビルドする
 test:
