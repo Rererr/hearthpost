@@ -10,7 +10,8 @@
     "companyName": "Rererr",
     "productName": "hearthpost",
     "productVersion": "0.1.0",
-    "comments": "LAN 内でファイルとテキストを送り合う"
+    "comments": "LAN 内でファイルとテキストを送り合う",
+    "copyright": "© 2026 Rererr"
   },
   "author": {
     "name": "Rererr",

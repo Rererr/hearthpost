@@ -39,7 +39,8 @@ The UI is in Japanese only for now.
 
 ## Installation
 
-There are no prebuilt releases yet. Build from source.
+If you are not a computer expert, follow [docs/INSTALL.en.md](docs/INSTALL.en.md), which only needs a download.
+The rest of this section explains how to build from source.
 
 ### Requirements
 
@@ -139,7 +140,8 @@ Rules:
 
 ```sh
 make test         # build the UI, go vet, tests with -race
-make build        # build for Mac (universal) and Windows
+make build        # build for Mac (universal) and Windows (also the Windows installer; needs makensis)
+make dmg          # build the distributable build/bin/hearthpost.dmg
 ```
 
 The networking core is `internal/transfer`, which does not depend on Wails.

@@ -3,7 +3,7 @@
 # make wails-cli で x/tools を新しくした CLI を bin/wails に作り、それを使う。
 WAILS ?= $(if $(wildcard bin/wails),./bin/wails,wails)
 
-.PHONY: build build-mac build-windows test wails-cli clean
+.PHONY: build build-mac build-windows dmg test wails-cli clean
 
 build: build-mac build-windows
 
@@ -11,7 +11,15 @@ build-mac:
 	$(WAILS) build -clean -platform darwin/universal
 
 build-windows:
-	$(WAILS) build -skipbindings -platform windows/amd64
+	$(WAILS) build -skipbindings -platform windows/amd64 -nsis -installscope user
+
+# 配布用の dmg。開くと hearthpost と「アプリケーション」が並び、ドラッグで入れられる
+dmg: build-mac
+	rm -rf build/dmg && mkdir -p build/dmg
+	cp -R build/bin/hearthpost.app build/dmg/
+	ln -s /Applications build/dmg/Applications
+	hdiutil create -volname hearthpost -srcfolder build/dmg -ov -format UDZO build/bin/hearthpost.dmg
+	rm -rf build/dmg
 
 # main.go が frontend/dist を埋め込むので、Go の検査より先に画面をビルドする
 test:

@@ -37,7 +37,8 @@ hearthpost は、同じ LAN にいる Windows と Mac のあいだで、ファ�
 
 ## インストール
 
-いまは配布用のビルドを用意していないので、ソースからビルドします。
+パソコンに詳しくない方は、ダウンロードして開くだけの手順を [docs/INSTALL.md](docs/INSTALL.md) にまとめています。
+ここから先は、ソースからビルドする手順です。
 
 ### 必要なもの
 
@@ -137,7 +138,8 @@ hearthpost（https://github.com/Rererr/hearthpost）をソースからビルド�
 
 ```sh
 make test         # 画面のビルド、go vet、テスト（-race）
-make build        # Mac（universal）と Windows の両方をビルド
+make build        # Mac（universal）と Windows の両方をビルド（Windows はインストーラーも作る。makensis が要る）
+make dmg          # 配布用の build/bin/hearthpost.dmg を作る
 ```
 
 通信の中心は `internal/transfer` にあり、Wails に依存しません。

@@ -5,3 +5,5 @@ bin/
 .wails-cli/
 .DS_Store
 /hearthpost
+build/dmg
+build/windows/installer/tmp
