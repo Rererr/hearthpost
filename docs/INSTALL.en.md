@@ -164,7 +164,7 @@ To stop, press "解除" (unpair) on the card. Unpairing affects only that comput
 
 ### Nothing arrives when someone sends to me
 
-You may have clicked "Don't Allow" or "Cancel" when you first opened hearthpost.
+You may have clicked "Don't Allow", "Deny", or "Cancel" when you first opened hearthpost.
 
 - Mac: In "System Settings" → "Network" → "Firewall" → "Options", set hearthpost to "Allow incoming connections". Also turn hearthpost on in "System Settings" → "Privacy & Security" → "Local Network".
 - Windows: Open "Windows Security" from the Start button, choose "Firewall & network protection" → "Allow an app through firewall" → "Change settings", and check "Private" for hearthpost.
